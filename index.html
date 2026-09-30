@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>KTU UCEST105 Exam Priority Guide</title>
+
+<!-- Google Fonts - Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- KaTeX CSS & JS for LaTeX Math Rendering -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+<!-- MathJax fallback -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<style>
+  :root {
+    --primary: #1e3a8a;
+    --primary-light: #2563eb;
+    --accent: #0284c7;
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --border-dark: #cbd5e1;
+    --letter-spacing-body: 0.018em;
+    --letter-spacing-heading: 0.035em;
+    --letter-spacing-caps: 0.05em;
+  }
+
+  @page {
+    size: A4;
+    margin: 18mm 15mm 18mm 15mm;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    line-height: 1.7;
+    font-size: 10.5pt;
+    letter-spacing: var(--letter-spacing-body);
+    margin: 0;
+    padding: 24px 14px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .main-container {
+    max-width: 840px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 36px 30px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-color);
+  }
+
+  .header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+  }
+
+  .header h1 {
+    font-size: clamp(1.25rem, 4vw, 1.6rem);
+    color: var(--primary);
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-caps);
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  .header h2 {
+    font-size: clamp(0.95rem, 3vw, 1.15rem);
+    color: var(--text-secondary);
+    margin: 0 0 12px 0;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.45;
+  }
+
+  .header .badge {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    padding: 5px 14px;
+    font-size: 8.5pt;
+    border-radius: 9999px;
+    font-weight: 600;
+    letter-spacing: 0.035em;
+    max-width: 100%;
+    word-break: break-word;
+    line-height: 1.45;
+  }
+
+  h2.section-title {
+    font-size: clamp(1.1rem, 3.5vw, 1.25rem);
+    color: var(--primary);
+    border-left: 4px solid var(--primary-light);
+    padding-left: 12px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: var(--letter-spacing-heading);
+  }
+
+  h3.module-title {
+    font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+    background-color: #f1f5f9;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: #0f172a;
+    margin-top: 26px;
+    margin-bottom: 14px;
+    border-left: 4px solid var(--accent);
+    line-height: 1.45;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 18px 0 26px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-dark);
+    background: #ffffff;
+  }
+
+  table {
+    width: 100%;
+    min-width: 580px;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+    margin: 0;
+  }
+
+  th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.015em;
+  }
+
+  th {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-weight: 600;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+    border-bottom: 2px solid var(--border-dark);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  .badge-tier1 {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    font-weight: 700;
+    font-size: 8.5pt;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid #fecaca;
+    display: inline-block;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  .badge-tier2 {
+    background-color: #fffbeb;
+    color: #b45309;
+    font-weight: 700;
+    font-size: 8.5pt;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid #fde68a;
+    display: inline-block;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  ul, ol {
+    margin: 10px 0 14px 0;
+    padding-left: 26px;
+  }
+
+  li {
+    margin-bottom: 9px;
+    line-height: 1.68;
+    letter-spacing: 0.018em;
+  }
+
+  strong {
+    font-weight: 650;
+    color: #0f172a;
+    letter-spacing: 0.015em;
+  }
+
+  code {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 2px 7px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 9pt;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    letter-spacing: 0.025em;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .callout {
+    background-color: #f8fafc;
+    border-left: 4px solid #64748b;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 9.5pt;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    line-height: 1.65;
+    letter-spacing: 0.018em;
+  }
+
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 8px 0;
+    margin: 14px 0 !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  @media (max-width: 640px) {
+    body {
+      padding: 10px 6px;
+      font-size: 10pt;
+      letter-spacing: 0.02em;
+    }
+    .main-container {
+      padding: 20px 14px;
+      border-radius: 8px;
+    }
+    .callout {
+      padding: 12px 14px;
+      font-size: 9pt;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    th, td {
+      padding: 9px 10px;
+    }
+  }
+
+  @media print {
+    body {
+      font-size: 10pt;
+      background-color: #ffffff;
+      padding: 0;
+    }
+    .main-container {
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      max-width: 100%;
+    }
+    .table-container {
+      border: none;
+      overflow-x: visible;
+      margin: 12px 0 18px 0;
+    }
+    table {
+      min-width: 100%;
+      page-break-inside: avoid;
+    }
+    .no-print {
+      display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="main-container">
+
+<div class="header">
+  <h1>APJ Abdul Kalam Technological University (KTU)</h1>
+  <h2>UCEST105: Algorithmic Thinking with Python (2024 Scheme)</h2>
+  <span class="badge">Priority Chart, Repeat Frequency Analysis &amp; Comprehensive Guide</span>
+</div>
+
+<div class="callout" style="border-left-color: #2563eb;">
+  Based on a cross-analysis of the <strong>KTU UCEST105 Syllabus (2024 Scheme)</strong> and the exam papers (<strong>Dec 2024, May 2025, Dec 2025, May 2026, and the Official Model Paper</strong>), here is a complete <strong>Priority Chart, Repeat Frequency Analysis, and Module-Wise Categorization</strong>.
+</div>
+
+<div class="callout">
+  <strong>Exam Structure Quick Reference:</strong><br>
+  • <strong>Total Marks:</strong> 60 | <strong>Time:</strong> 2 Hours 30 Minutes<br>
+  • <strong>Part A (24 Marks):</strong> 8 mandatory questions &times; 3 marks each (2 from each Module).<br>
+  • <strong>Part B (36 Marks):</strong> 4 Modules &times; 9 marks each. Each module has an internal choice: <strong>Question A OR Question B</strong> (subdivided into 3 to 6 marks).
+</div>
+
+<h2 class="section-title">1. High-Probability Topic Matrix (Next Exam)</h2>
+<div class="table-container">
+<table>
+  <thead>
+    <tr>
+      <th style="width: 18%;">Priority Level</th>
+      <th style="width: 10%;">Module</th>
+      <th>Expected Question / Topic</th>
+      <th style="width: 16%;">Question Type</th>
+      <th style="width: 14%;">Probable Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M1</strong></td>
+      <td>Six Problem-Solving Steps applied to a math/geometry problem</td>
+      <td>Descriptive</td>
+      <td><strong>6–9 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M1</strong></td>
+      <td>Python Expression Evaluation (Operator Precedence: <code>**</code>, <code>//</code>, logical)</td>
+      <td>Short Answer</td>
+      <td><strong>3 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M2</strong></td>
+      <td>Flowchart for Decision / Loop (Largest of $N$, Grade scale, Fact, Counter)</td>
+      <td>Diagram</td>
+      <td><strong>4–6 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M3</strong></td>
+      <td>Recursive Function with Call Stack Execution Trace (Multiply, GCD, Digits)</td>
+      <td>Coding + Trace</td>
+      <td><strong>4–6 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M3</strong></td>
+      <td>String Slicing (<code>s[::-1]</code>, <code>s[start:stop:step]</code>) or List/Tuple comparison</td>
+      <td>Short Answer</td>
+      <td><strong>3 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M4</strong></td>
+      <td>Merge Sort Diagrammatic Trace (Split &amp; Merge tree)</td>
+      <td>Diagram/Trace</td>
+      <td><strong>6 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M4</strong></td>
+      <td>Comparison: Greedy vs. Dynamic Programming</td>
+      <td>Theory</td>
+      <td><strong>3–4 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier1">Tier 1 (95–100% Sure)</span></td>
+      <td><strong>M4</strong></td>
+      <td>Memoization vs. Tabulation in Dynamic Programming</td>
+      <td>Theory/Examples</td>
+      <td><strong>3–6 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier2">Tier 2 (75–90% High)</span></td>
+      <td><strong>M1</strong></td>
+      <td>Means-Ends Analysis or Heuristics with real-world scenarios</td>
+      <td>Scenario-based</td>
+      <td><strong>4–7 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier2">Tier 2 (75–90% High)</span></td>
+      <td><strong>M2</strong></td>
+      <td>Pseudocode for Conditional Aggregation (Average with sentinel termination)</td>
+      <td>Pseudocode</td>
+      <td><strong>5–6 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier2">Tier 2 (75–90% High)</span></td>
+      <td><strong>M3</strong></td>
+      <td>KTU Lab-linked Program (Right Triangle, Valid Mobile, Merge Even/Odd)</td>
+      <td>Python Code</td>
+      <td><strong>3–6 M</strong></td>
+    </tr>
+    <tr>
+      <td><span class="badge-tier2">Tier 2 (75–90% High)</span></td>
+      <td><strong>M4</strong></td>
+      <td>Greedy Task Scheduling or Bag Capacity (Item selection)</td>
+      <td>Algorithm/Code</td>
+      <td><strong>3–6 M</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 class="section-title">2. Most Repeated Questions Across All Examination Papers</h2>
+
+<h3 style="color: #1e3a8a; font-size: 11pt; margin-top: 16px; margin-bottom: 8px;">A. Repeated 3 to 4 Times (Direct Questions)</h3>
+
+<div class="callout">
+  <strong>1. Greedy vs. Dynamic Programming:</strong>
+  <ul>
+    <li><em>Appeared in:</em> Dec 2024 (Q15b), May 2025 (Q16b), Dec 2025 (Q8), Model Paper (Q7).</li>
+    <li><em>What to learn:</em> Approach (local choice vs. subproblem combination), optimality guarantee, backtracking/memoization, time efficiency ($O(n \log n)$), classic examples.</li>
+  </ul>
+</div>
+
+<div class="callout">
+  <strong>2. Memoization vs. Tabulation in DP:</strong>
+  <ul>
+    <li><em>Appeared in:</em> Dec 2024 (Q16a), May 2025 (Q15b), Dec 2025 (Q16b).</li>
+    <li><em>What to learn:</em> Top-down with caching vs. bottom-up table filling; call stack overhead vs. table order dependency; $n$-th Fibonacci example.</li>
+  </ul>
+</div>
+
+<div class="callout">
+  <strong>3. Merge Sort Algorithm &amp; Step-by-Step Tree Tracing:</strong>
+  <ul>
+    <li><em>Appeared in:</em> May 2025 (Q15a), May 2026 (Q16a), Model Paper (Q13a).</li>
+    <li><em>What to learn:</em> Divide step (middle), base case (length 1), merge step; draw the complete tree with input arrays like <code>[15, 8, 3, 12, 6, 10, 4, 1]</code> and <code>[38, 27, 43, 3, 9, 82, 10]</code>.</li>
+  </ul>
+</div>
+
+<div class="callout">
+  <strong>4. Python Operator Precedence &amp; Evaluation:</strong>
+  <ul>
+    <li><em>Appeared in:</em> Dec 2024 (Q5), May 2025 (Q2), Dec 2025 (Q2), May 2026 (Q2).</li>
+    <li><em>Key rule:</em> <code>**</code> evaluates right-to-left ($2^{3^2} = 2^9 = 512$), while <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code> evaluate left-to-right.</li>
+  </ul>
+</div>
+
+<h3 style="color: #1e3a8a; font-size: 11pt; margin-top: 18px; margin-bottom: 8px;">B. Repeated 2 to 3 Times (Pattern/Topic Level)</h3>
+
+<div class="callout">
+  <ol style="margin: 4px 0; padding-left: 20px;">
+    <li style="margin-bottom: 8px;">
+      <strong>The Six Problem-Solving Steps Walkthrough:</strong><br>
+      Understand Problem &rarr; Formulate Model &rarr; Develop Algorithm &rarr; Write Program &rarr; Test &rarr; Evaluate.<br>
+      <em>Variations tested:</em> Area of a circle (May 2025), Area of a right triangle (Dec 2025), Real roots of a quadratic equation (May 2026), Largest of 3 numbers (Model Paper).
+    </li>
+    <li style="margin-bottom: 8px;">
+      <strong>Means-Ends Analysis with Real-World Scenario:</strong><br>
+      Campus management software (Dec 2024), Fitness book publishing (Dec 2025), Assignment submission (Model Paper).
+    </li>
+    <li style="margin-bottom: 8px;">
+      <strong>Recursive Function with Call Stack Tracing:</strong><br>
+      Tracing multiplication $a \times b$ via addition with stack (May 2025), Sum of digits of a number (Dec 2025), Recursive GCD / Euclid (May 2025, Dec 2024).
+    </li>
+    <li style="margin-bottom: 8px;">
+      <strong>Greedy Task Completion / Knapsack:</strong><br>
+      Given task times array, find max tasks within time limit $T$ (Dec 2024 Q16b, Dec 2025 Q16a).
+    </li>
+    <li style="margin-bottom: 4px;">
+      <strong>Sentinel-Controlled While Loop / Pseudocode:</strong><br>
+      Compute average until user enters terminating signal (0 or -5555).
+    </li>
+  </ol>
+</div>
+
+<div class="page-break"></div>
+
+<h2 class="section-title">3. Comprehensive Module-Wise Breakdown</h2>
+
+<h3 class="module-title">MODULE 1: Problem-Solving Strategies &amp; Python Basics</h3>
+
+<h4 style="color: #1e3a8a; margin: 12px 0 6px 0; font-size: 10.5pt;">3-Mark Questions (Part A)</h4>
+<ul>
+  <li><strong>Operator Precedence Output Questions:</strong>
+    <ul>
+      <li><em>Example 1:</em> <code>2 * 3 ** 2 ** 2</code> &rarr; $3^{(2^2)} = 3^4 = 81 \implies 2 \times 81 = 162$.</li>
+      <li><em>Example 2:</em> <code>(50 - 5 * 6) // 4</code> &rarr; $(50 - 30) // 4 = 20 // 4 = 5$.</li>
+      <li><em>Example 3:</em> <code>(8 + 6 * 2 ** 3 ** 1) / 7 - 4</code> &rarr; $(8 + 6 \times 8) / 7 - 4 = 56 / 7 - 4 = 8.0 - 4 = 4.0$.</li>
+      <li><em>Example 4:</em> <code>not (10 &lt; 5) or (5 == 5)</code> &rarr; $\text{not False or True} = \text{True}$.</li>
+    </ul>
+  </li>
+  <li><strong>Strategy Identification:</strong>
+    <ul>
+      <li>Identify ill-defined problems (e.g., "Become successful", "Design a beautiful UI") vs. well-defined problems (e.g., "Find the GCD of 24 and 36", "Sort a list of numbers").</li>
+      <li>Strategy use-cases: Sudoku (Backtracking), Navigation / Trip planning (Heuristics or Means-Ends Analysis), Padlock unlocking (Brute Force / Trial &amp; Error).</li>
+    </ul>
+  </li>
+  <li><strong>Python <code>math</code> Module Functions:</strong>
+    <ul>
+      <li>State any 3: <code>math.sqrt(x)</code>, <code>math.pow(x, y)</code>, <code>math.gcd(a, b)</code>, <code>math.ceil(x)</code>, <code>math.floor(x)</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 style="color: #1e3a8a; margin: 14px 0 6px 0; font-size: 10.5pt;">6 to 9-Mark Questions (Part B)</h4>
+<ul>
+  <li><strong>[Priority 1 - Sure Shot] The 6 Problem-Solving Steps:</strong>
+    <ul>
+      <li>Must memorize the 6 formal headings:
+        <ol style="margin: 4px 0; padding-left: 18px;">
+          <li><em>Understanding the problem</em> (Inputs, outputs, constraints).</li>
+          <li><em>Formulating a model</em> (Mathematical equations, formulas).</li>
+          <li><em>Developing an algorithm</em> (Step-by-step logic).</li>
+          <li><em>Writing the program</em> (Python code).</li>
+          <li><em>Testing the program</em> (Test cases including boundary/edge values).</li>
+          <li><em>Evaluating the solution</em> (Time/space complexity and limitations).</li>
+        </ol>
+      </li>
+      <li><em>Must-prepare problems:</em> Area of circle ($A = \pi r^2$), Roots of quadratic equation ($x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$), Largest of three numbers.</li>
+    </ul>
+  </li>
+  <li><strong>[Priority 2] Means-Ends Analysis:</strong>
+    <ul>
+      <li>Define current state, goal state, identify differences, establish sub-goals/operators to reduce differences, evaluate progress.</li>
+    </ul>
+  </li>
+  <li><strong>[Priority 3] Short Python Scripts:</strong>
+    <ul>
+      <li>Reverse a 3-digit number without loops: <code>rev = (n % 10)*100 + ((n // 10) % 10)*10 + (n // 100)</code>.</li>
+      <li>Calculate radius from area using <code>math.sqrt(area / math.pi)</code>.</li>
+      <li>Convert total minutes to hours and minutes (<code>hours = mins // 60</code>, <code>rem = mins % 60</code>).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="module-title">MODULE 2: Algorithm, Pseudocode &amp; Flowcharts</h3>
+
+<h4 style="color: #1e3a8a; margin: 12px 0 6px 0; font-size: 10.5pt;">3-Mark Questions (Part A)</h4>
+<ul>
+  <li><strong>Flowchart Symbols &amp; Definitions:</strong>
+    <ul>
+      <li>Oval (Start/End), Parallelogram (I/O), Rectangle (Process/Calculation), Diamond (Decision), Hexagon (For loop/Preparation).</li>
+    </ul>
+  </li>
+  <li><strong>Pseudocode Definition &amp; Advantages:</strong>
+    <ul>
+      <li>Language-independent, easy to design/debug logic before writing syntax, bridge between English and code.</li>
+    </ul>
+  </li>
+  <li><strong>Simple Flowcharts / Algorithms:</strong>
+    <ul>
+      <li>Print integers below 50 in descending order (<code>for i = 49 down to 1</code>).</li>
+      <li>Factorial of a number using <code>for</code> loop.</li>
+      <li>Palindrome check for an integer (<code>rev = rev * 10 + digit</code>).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 style="color: #1e3a8a; margin: 14px 0 6px 0; font-size: 10.5pt;">5 to 6-Mark Questions (Part B)</h4>
+<ul>
+  <li><strong>[Priority 1 - Sure Shot] Loop-based Flowcharts &amp; Pseudocode:</strong>
+    <ul>
+      <li>Find largest and smallest in an array/list of $N$ numbers.</li>
+      <li>Input series of numbers sequentially and maintain <code>max_val</code> until terminated.</li>
+    </ul>
+  </li>
+  <li><strong>[Priority 2] Conditional Grading / Decision Systems:</strong>
+    <ul>
+      <li>KTU grading scale with rounding rule:
+        <ul>
+          <li>If <code>marks &gt;= 50</code> and <code>(next_multiple_of_10 - marks) &lt; 3</code>, round up to <code>next_multiple_of_10</code>.</li>
+          <li>Below 50, do not round up.</li>
+        </ul>
+      </li>
+      <li>Triangle classification: Equilateral ($a=b=c$), Isosceles ($a=b \lor b=c \lor a=c$), Scalene.</li>
+    </ul>
+  </li>
+  <li><strong>[Priority 3] Sentinel-Controlled Loops:</strong>
+    <ul>
+      <li>Read numbers continuously until a termination value (e.g., <code>0</code> or <code>-5555</code>) is entered; compute the average of those divisible by 4.</li>
+      <li>Mobile purchase discount flowchart (10% discount on original price, deduct flat 1000 if exchange available).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="module-title">MODULE 3: Python Collections, Modularization &amp; Recursion</h3>
+
+<h4 style="color: #1e3a8a; margin: 12px 0 6px 0; font-size: 10.5pt;">3-Mark Questions (Part A)</h4>
+<ul>
+  <li><strong>String / List Slicing:</strong>
+    <ul>
+      <li>Slicing format: <code>sequence[start:stop:step]</code></li>
+      <li><code>s[::-1]</code> (reverses string/list), <code>s[-3:]</code> (last 3 elements), <code>s[1:8:2]</code> (alternate characters from index 1 to 7).</li>
+    </ul>
+  </li>
+  <li><strong>List vs. Tuple vs. String vs. Set:</strong>
+    <ul>
+      <li><em>List:</em> Mutable, ordered, allows duplicates, uses <code>[]</code>.</li>
+      <li><em>Tuple:</em> Immutable, ordered, allows duplicates, uses <code>()</code>.</li>
+      <li><em>String:</em> Immutable sequence of characters, uses <code>""</code> or <code>''</code>.</li>
+      <li><em>Set:</em> Mutable, unordered, unique elements only, uses <code>{}</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Recursion Basics:</strong>
+    <ul>
+      <li>What is circularity? (Infinite recursion caused by missing base case or recursive step not moving towards the base case, leading to stack overflow).</li>
+      <li>Functions with multiple return values in Python: return as a tuple (<code>return a, b</code>).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 style="color: #1e3a8a; margin: 14px 0 6px 0; font-size: 10.5pt;">5 to 6-Mark Questions (Part B)</h4>
+<ul>
+  <li><strong>[Priority 1 - Sure Shot] Recursion with Call Stack Tracing:</strong>
+    <ul>
+      <li>Recursive multiplication of two positive numbers $a \times b$:
+        $$\text{multiply}(a, b) = \begin{cases} 0 & \text{if } b = 0 \\ a + \text{multiply}(a, b - 1) & \text{otherwise} \end{cases}$$
+        <em>Must know how to sketch stack push/pop frames for $\text{multiply}(3, 4)$.</em>
+      </li>
+      <li style="margin-top: 12px;">Recursive GCD (Euclidean Algorithm):
+        $$\text{gcd}(a, b) = \begin{cases} a & \text{if } b = 0 \\ \text{gcd}(b, a \pmod b) & \text{otherwise} \end{cases}$$
+      </li>
+      <li style="margin-top: 12px;">Recursive Fibonacci sequence generator ($F(n) = F(n-1) + F(n-2)$).</li>
+    </ul>
+  </li>
+  <li style="margin-top: 14px;"><strong>[Priority 2 - KTU Lab Program Questions] Data Processing Scripts:</strong>
+    <ul>
+      <li><strong>Valid Mobile Number Validator:</strong> Check <code>len(num) == 10</code>, <code>num.isdigit()</code>, and <code>num[0] in ['7', '8', '9']</code>.</li>
+      <li><strong>Merge Two Lists (Sorted Evens first, then Sorted Odds):</strong> Filter evens &rarr; sort; filter odds &rarr; sort; concatenate.</li>
+      <li><strong>Reorganize Characters in String:</strong> Extract and concatenate: uppercase + lowercase + digits + special symbols.</li>
+      <li><strong>In-place 1D Array Reversal (NumPy):</strong> Using two-pointer swap or slicing <code>arr[::-1]</code>.</li>
+      <li><strong>Right-Angled Triangle Check:</strong> Sort sides ($a, b, c$) and verify $a^2 + b^2 = c^2$.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="module-title">MODULE 4: Computational Paradigms &amp; Algorithm Design</h3>
+
+<h4 style="color: #1e3a8a; margin: 12px 0 6px 0; font-size: 10.5pt;">3-Mark Questions (Part A)</h4>
+<ul>
+  <li><strong>Brute-Force Unlocking / Padlock Question:</strong>
+    <ul>
+      <li>A 4-digit PIN with digits 0–9 has $10^4 = 10,000$ possible combinations (from <code>0000</code> to <code>9999</code>). Maximum attempts to guarantee opening = <strong>10,000</strong>.</li>
+    </ul>
+  </li>
+  <li><strong>Randomized Approach Motivation:</strong>
+    <ul>
+      <li>Simplifies implementation, avoids worst-case inputs (e.g., randomized quicksort), provides good approximations for NP-hard/complex problems.</li>
+      <li>Real-world problems: Hat-check problem ($E[X] = 1$), Coupon collector problem.</li>
+    </ul>
+  </li>
+  <li><strong>When is Greedy Guaranteed to Give an Optimal Solution?</strong>
+    <ul>
+      <li>When the problem satisfies:
+        <ol style="margin: 4px 0; padding-left: 18px;">
+          <li><em>Greedy Choice Property</em> (a globally optimal solution can be reached by making locally optimal choices).</li>
+          <li><em>Optimal Substructure</em> (optimal solution to the problem contains optimal solutions to subproblems).</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 style="color: #1e3a8a; margin: 14px 0 6px 0; font-size: 10.5pt;">5 to 6-Mark Questions (Part B)</h4>
+<ul>
+  <li><strong>[Priority 1 - Sure Shot] Merge Sort (Divide and Conquer):</strong>
+    <ul>
+      <li>Concept: Divide array into halves until size 1, recursively sort, merge sorted halves.</li>
+      <li>Detailed diagrammatic split &amp; merge tracing for given arrays.</li>
+      <li>Advantages (Guaranteed $O(n \log n)$, stable) &amp; Disadvantages ($O(n)$ auxiliary space).</li>
+    </ul>
+  </li>
+  <li><strong>[Priority 2 - Sure Shot] Dynamic Programming (DP):</strong>
+    <ul>
+      <li><strong>Memoization vs. Tabulation:</strong>
+        <ul>
+          <li><em>Memoization (Top-down):</em> Recursion + lookup table/cache; solves only needed subproblems.</li>
+          <li><em>Tabulation (Bottom-up):</em> Iterative table filling from base cases; no call stack overhead.</li>
+        </ul>
+      </li>
+      <li><strong>Climbing Stairs / Fibonacci Formulation:</strong>
+        <ul>
+          <li>Identify overlapping subproblems and optimal substructure ($Ways(n) = Ways(n-1) + Ways(n-2)$).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>[Priority 3] Greedy Algorithms:</strong>
+    <ul>
+      <li><strong>Task Scheduling / Max Tasks:</strong> Sort tasks by completion time in ascending order, iteratively select tasks as long as cumulative time &le; limit.</li>
+      <li><strong>Greedy Coin Change:</strong> Iteratively pick the largest coin denomination &le; remaining amount.</li>
+      <li><strong>Divide &amp; Conquer for Two Smallest Rates:</strong> Divide list into halves, return 2 minimums from left and right, compare to find global two smallest.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="section-title">4. Final Revision Strategy</h2>
+<div class="callout">
+  <ol style="margin: 4px 0; padding-left: 20px;">
+    <li style="margin-bottom: 8px;">
+      <strong>First 2 Hours:</strong>
+      <ul>
+        <li>Practice drawing the <strong>Merge Sort</strong> split-and-merge tree.</li>
+        <li>Write down the comparison table for <strong>Greedy vs. Dynamic Programming</strong> and <strong>Memoization vs. Tabulation</strong>.</li>
+      </ul>
+    </li>
+    <li style="margin-bottom: 8px;">
+      <strong>Next 2 Hours:</strong>
+      <ul>
+        <li>Master the <strong>Six Problem-Solving Steps</strong> template and apply it to: Area of Circle, Quadratic Roots, and Largest of 3.</li>
+        <li>Practice tracing a <strong>Recursive Function Call Stack</strong> on paper (e.g., $3 \times 4$ or sum of digits of 123).</li>
+      </ul>
+    </li>
+    <li style="margin-bottom: 4px;">
+      <strong>Final 1 Hour:</strong>
+      <ul>
+        <li>Review Python operator precedence rules (<code>**</code> right-to-left) and slicing syntax (<code>[::-1]</code>).</li>
+        <li>Review flowchart symbols (especially loops and decisions) to avoid losing easy marks in Module 2.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+</body>
+</html>
